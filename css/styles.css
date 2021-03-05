@@ -436,15 +436,110 @@ main{
     color: #757575;
 }
 
+.plans-container--slider{
+    display: flex;
+    /* gap: 50px; es experimental*/ 
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .plans-container--card{
     position: relative;
-    width: 70%;
-    min-width: 230px;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 100px;
+    margin: 50px 20px 0px;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.title-card--style{
+
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.recomendado--color{
+    background-color: var(--bitcoin-orange);
+}
+
+.basico--color{
+    background-color: var(--secondary-blue);
+}
+
+.Ilimitado--color{
+    background-color: var(--warm-black_black);
+}
+
+.plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.plant-cart--price{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 5.3rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: var(--warm-black);
+}
+
+.plant-cart--price span{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+}
+
+.plant-cart--saving{
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card--cta{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.plan-card--cta span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+.cta-button--black{
+    background-color: var(--warm-black_black);
+}
+
+.cta-text--white{
+    color: var(--off-white);
 }
